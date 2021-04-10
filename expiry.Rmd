@@ -11,9 +11,7 @@ library(rjson)
 library(lubridate)
 ```
 
-## Converting from json
-
-
+## Convert from json
 ```{r}
 json <- fromJSON(file="expiry.json")
 # data is in list-of-list form
@@ -25,6 +23,9 @@ data <- unstack(stack(unlist(json)))
 data$ExpiryDate <- ymd(data$ExpiryDate)
 # sort by date
 data <- data[order(data$ExpiryDate),]
-data
 ```
 
+## write the data out as a tidy csv file
+```{r}
+
+```
