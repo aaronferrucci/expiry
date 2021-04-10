@@ -1,5 +1,9 @@
 [
   {
+    "Batch" : "002C21A",
+    "ExpiryDate" : "2021-10-14"
+  },
+  {
     "Batch" : "001A21A",
     "ExpiryDate" : "2021-08-09"
   },
@@ -396,6 +400,10 @@
     "ExpiryDate" : "2021-08-29"
   },
   {
+    "Batch" : "014C21A",
+    "ExpiryDate" : "2021-10-16"
+  },
+  {
     "Batch" : "009C21A",
     "ExpiryDate" : "2021-10-15"
   },
@@ -414,5 +422,21 @@
   {
     "Batch" : "048B21A",
     "ExpiryDate" : "2021-10-09"
+  },
+  {
+    "Batch" : "006C21A",
+    "ExpiryDate" : "2021-10-10"
+  },
+  {
+    "Batch" : "017C21A",
+    "ExpiryDate" : "2021-10-19"
+  },
+  {
+    "Batch" : "022B21A",
+    "ExpiryDate" : "2021-09-28"
+  },
+  {
+    "Batch" : "033B21A",
+    "ExpiryDate" : "2021-09-26"
   }
 ]
