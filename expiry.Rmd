@@ -27,5 +27,5 @@ data <- data[order(data$ExpiryDate),]
 
 ## write the data out as a tidy csv file
 ```{r}
-
+write.csv(data, "expiry.csv", row.names=F)
 ```
