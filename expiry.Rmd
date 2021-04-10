@@ -1,0 +1,30 @@
+---
+title: "Expiry Exploration"
+author: "Aaron Ferrucci"
+date: "4/6/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(rjson)
+library(lubridate)
+```
+
+## Converting from json
+
+
+```{r}
+json <- fromJSON(file="expiry.json")
+# data is in list-of-list form
+# unlist it,
+# stack it (to create long format data),
+# unstack it (to create wide data)
+data <- unstack(stack(unlist(json)))
+# parse the date
+data$ExpiryDate <- ymd(data$ExpiryDate)
+# sort by date
+data <- data[order(data$ExpiryDate),]
+data
+```
+
